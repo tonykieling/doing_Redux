@@ -23,3 +23,15 @@ export const errors = (state = [], action) => {
       return state
   }
 }
+
+export const allSkiDays = (state = [], action) => {
+  switch(action.type) {
+    case C.ADD_DAY:
+      return [
+        ...state,
+        skiDay(null, action)
+      ]
+    default:
+      state
+  }
+}
