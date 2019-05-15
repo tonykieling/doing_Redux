@@ -1,0 +1,28 @@
+{
+  "allSkiDays": [
+    {
+      "resort": "resort1",
+      "date": "2019-12-10",
+      "powder": true,
+      "backcountry": false
+    },
+    {
+      "resort": "resort2",
+      "date": "2019-12-11",
+      "powder": false,
+      "backcountry": false
+    },
+    {
+      "resort": "resort3",
+      "date": "2019-12-12",
+      "powder": false,
+      "backcountry": true
+    }
+  ],
+  "goal": 10,
+  "errors": [],
+  "resortNames": {
+    "fetching": false,
+    "suggestions": ["suggestion1", "suggestion2", "suggestion3"]
+  }
+}
