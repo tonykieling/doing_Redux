@@ -21,6 +21,7 @@ const actualState = {
 	fetching: fetching(state.fetching, action),
 	suggestions: suggestions(state.suggestions, action)
 }
+console.log("actualState: ", actualState)
 
 expect(actualState.suggestions).toEqual(expectedState.suggestions)
 expect(actualState.fetching).toEqual(expectedState.fetching)
