@@ -40,3 +40,25 @@ export const allSkiDays = (state = [], action) => {
       return state
   }
 }
+
+export const fetching = (state = false, action) => {
+  switch(action.type) {
+    case "FETCH_RESORT_NAMES" :
+      return true
+    case "CANCEL_FETCHING" :
+      return false
+    default :
+      return state
+    }
+}
+
+export const suggestions = (state = [], action) => {
+  switch(action.type) {
+    case "CLEAR_SUGGESTIONS" :
+      return []
+    case "CHANGE_SUGGESTIONS" :
+      return false
+    default :
+      return state
+    }
+}
