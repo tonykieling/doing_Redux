@@ -1,4 +1,5 @@
 import C from '../constants.js'
+import { combineReducers } from 'redux'
 
 export const goal = (state, action) =>
   (action.type === C.SET_GOAL) ?
