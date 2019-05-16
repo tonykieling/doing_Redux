@@ -29,9 +29,10 @@ export const allSkiDays = (state = [], action) => {
     case C.ADD_DAY:
       return [
         ...state,
+        // action.payload
         skiDay(null, action)
       ]
     default:
-      state
+      return state
   }
 }
