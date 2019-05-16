@@ -3,27 +3,23 @@ import { allSkiDays } from './store/reducers'
 
 const state = [
    {
-   "resort": "Kirkwood",
-   "date": "2016-12-7",
-   "powder": true,
-   "backcountry": false
+      "resort": "Kirkwood",
+      "date": "2016-12-7",
+      "powder": true,
+      "backcountry": false
+   },
+   {
+      "resort": "NEW",
+      "date": "2016-12-6",
+      "powder": true,
+      "backcountry": true
    }
 ]
 
 const action = {
-   type: C.ADD_DAY,
-   payload: {
-			"resort": "NEW",
-			"date": "2016-12-7",
-			"powder": true,
-			"backcountry": true
-	}
+   type: C.REMOVE_DAY,
+   payload: "2016-12-6"
 }
-
-// const action = {
-//    type= C.ADD_ERROR,
-//    payload: "NEWWWWW"
-// }
 
 const nextState = allSkiDays(state, action)
 
